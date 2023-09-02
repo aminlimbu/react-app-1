@@ -1,4 +1,4 @@
-import Card from "./Cards";
+import Card from "./ui/Cards";
 
 const Featured = () => {
     return (

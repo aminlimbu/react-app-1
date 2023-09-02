@@ -1,9 +1,9 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import Hero from "./Hero";
-import Featured from "./Featured";
-import DeliveryInfo from "./DeliveryInfo";
-import Story from "./Story";
+import Header from "features/ui/Header";
+import Footer from "features/ui/Footer";
+import Hero from "features/Hero";
+import Featured from "features/Featured";
+import DeliveryInfo from "features/DeliveryInfo";
+import Story from "features/Story";
 
 function App() {
     return (
