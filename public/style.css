@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 * {
     padding: 0;
@@ -18,8 +19,6 @@ body {
     position: relative;
     max-width: 900px;
     margin: 0 auto;
-    /* width: 100%s; */
-    /* margin: s0 auto; */
 }
 
 header {
@@ -79,8 +78,6 @@ header {
     height: 40vh;
     min-height: 600px;
     width: 100%;
-    /* width: 800px; */
-    /* max-width: 1200px; */
 
     &:before {
         content: "";
@@ -186,13 +183,11 @@ header {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    /* flex-direction: row; */
     padding: 1rem;
     justify-content: space-between;
 }
 
 .story-image {
-    /* width: 50%; */
     height: 40vh;
     width: 100%;
     min-height: 300px;
@@ -215,11 +210,71 @@ header {
 
 article {
     padding: 1rem;
-    /* width: 400px; */
+}
+
+/* About us page */
+.about-top {
+    font-family: "Josefin Sans", sans-serif;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a2678a;
+    font-size: 2rem;
+    color: #71b280;
+}
+.about-title {
+    position: relative;
+    text-align: center;
+}
+.about-top i {
+    position: absolute;
+    bottom: 1;
+    right: 1;
+}
+
+.about-us {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.about-profiles {
+    height: 400px;
+    width: 100%;
+    background-color: #3f1d38;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: lightblue;
+    padding: 1rem;
+    text-align: center;
+}
+
+.about-profiles div {
+    margin-top: 1rem;
+}
+
+.about-visions {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.about-visions div {
+    margin-top: 1rem;
 }
 /* Footer Section */
 footer {
-    /* position: absolute; */
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
