@@ -30,6 +30,10 @@ header {
     width: 100%;
 }
 
+header a {
+    color: inherit;
+    text-decoration: none;
+}
 .icon-container {
     display: flex;
     align-items: center;
@@ -39,7 +43,7 @@ header {
 }
 
 .logo-text {
-    margin-left: 2px;
+    margin: 0 5px;
     letter-spacing: 1px;
     border-bottom: 5px solid black;
 }
@@ -59,6 +63,14 @@ header {
     margin: 5px;
 }
 
+.nav-list li a {
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    border-bottom: 5px solid black;
+}
+
 .material-symbols-outlined {
     font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
     margin-top: 3px;
@@ -73,7 +85,7 @@ header {
     background-image: url("http://christmasstockimages.com/free/blue/christmas_candle.jpg");
     background-position: center;
     background-size: cover;
-    margin-top: 2rem;
+    padding: 2rem;
     position: relative;
     height: 40vh;
     min-height: 600px;
@@ -91,20 +103,20 @@ header {
     }
 }
 
-.hero h1 {
-    margin-top: 1rem;
+.hero-heading {
     color: #f4f4f4;
     position: absolute;
-    bottom: 12rem;
+    bottom: 15rem;
     left: 3rem;
 }
 
-.hero p {
+.hero-body {
     position: absolute;
     color: white;
-    bottom: 7rem;
+    bottom: 10rem;
     left: 3rem;
     margin-top: 1rem;
+    padding: 1rem;
 }
 
 /* Deliverg Info */
@@ -125,7 +137,7 @@ header {
 }
 
 .delivery-text {
-    color: white;
+    color: #023047;
     text-align: center;
     margin: 0.8rem auto;
 }
@@ -133,9 +145,9 @@ header {
 /* Featured Items */
 .featured {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
     margin-top: 2rem;
     width: 100%;
 }
@@ -148,30 +160,38 @@ header {
     justify-content: center;
     background-color: #002f4b10;
     width: 100%;
-    margin: 0 0.5rem;
-    padding: 1rem;
+    margin: 0 1rem;
+    padding: 0 0 1rem 0;
     border: 2px solid #00000020;
     border-radius: 5px;
-    overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.card img {
-    margin-top: 0.5rem;
-    width: 200px;
+.card-image {
     height: 200px;
+    width: 100%;
+    margin-bottom: auto;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+}
+.card img {
+    width: 100%;
     object-fit: cover;
 }
 
+.card h2 {
+    margin-top: 1rem;
+}
 .card p {
-    margin-top: 0.3rem;
+    margin-top: 1rem;
 }
 
 /* Our story */
 .our-story {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 2rem;
     width: 100%;
 }
 
@@ -180,7 +200,6 @@ header {
 }
 
 .story {
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -210,6 +229,7 @@ header {
 
 article {
     padding: 1rem;
+    margin-top: 2rem;
 }
 
 /* About us page */
@@ -273,6 +293,46 @@ article {
 .about-visions div {
     margin-top: 1rem;
 }
+
+/* Contact us page */
+.contact-us {
+    height: 100%;
+    width: 100%;
+}
+
+.contact-image {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        216deg,
+        hsl(330, 82.81%, 74.9%) 0%,
+        hsl(329.2, 80.76%, 74.56%) 8.1%,
+        hsl(326.84, 75.18%, 73.59%) 15.7%,
+        hsl(322.8, 67.14%, 72.05%) 22.8%,
+        hsl(316.7, 57.66%, 70.01%) 29.5%,
+        hsl(307.75, 47.6%, 67.5%) 35.9%,
+        hsl(294.82, 42.63%, 65.82%) 42.1%,
+        hsl(281.31, 46.45%, 66.14%) 48.1%,
+        hsl(268.49, 50.4%, 66.45%) 54.1%,
+        hsl(256.31, 54.32%, 66.73%) 60%,
+        hsl(244.63, 58.09%, 66.99%) 66.1%,
+        hsl(233.92, 64.06%, 64.93%) 72.3%,
+        hsl(226.09, 70.38%, 61.02%) 78.7%,
+        hsl(220.12, 75.28%, 56.72%) 85.4%,
+        hsl(215.25, 78.97%, 51.95%) 92.5%,
+        hsl(210, 100%, 45.1%) 100%
+    );
+}
+
+.contact-details {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Footer Section */
 footer {
     text-align: center;
@@ -286,18 +346,20 @@ footer {
 }
 
 /* Media Query */
-@media (max-width: 900px) {
+@media (max-width: 780px) {
     .hero {
         width: 100%;
     }
 
     .featured {
         flex-direction: column;
+        align-items: center;
         padding: 0 1rem;
+        min-height: 300px;
     }
 
     .card {
-        margin: 0.5rem;
+        margin-top: 1rem;
     }
 }
 

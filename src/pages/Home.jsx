@@ -3,14 +3,9 @@ import Card from "features/ui/Cards";
 const Hero = () => {
     return (
         <div className="hero">
-            <h1>Lorem Heading One</h1>
-            <p>
+            <h1 className="hero-heading">Lorem Heading One</h1>
+            <p className="hero-body">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                <br />
-                Et officiis culpa eveniet debitis aut quae! Cum recusandae
-                labore
-                <br />
-                amet molestiae dicta alias rem praesentium assumenda sed,
                 <br />
                 exercitationem tenetur, itaque dolorem!
             </p>
