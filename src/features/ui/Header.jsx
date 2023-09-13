@@ -1,15 +1,9 @@
 import Nav from "./Nav";
 
-const Header = () => {
+const Header = (props) => {
     return (
         <header>
-            <a href="/">
-                <div className="icon-container">
-                    <span className="material-symbols-outlined">looks_one</span>
-                    <span className="logo-text">React App 1</span>
-                </div>
-            </a>
-            <Nav />
+            <Nav overlay={props.overlay} container={props.coatainer} />
         </header>
     );
 };
