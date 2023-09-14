@@ -12,6 +12,15 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.demo {
+    font-size: 7px;
+    padding: 3px;
+    background-color: rgb(236, 223, 74);
+    width: 100%;
+    text-align: center;
+    border: 0 0 1px 0 solid black;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -41,6 +50,10 @@ body {
     }
 }
 
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
 /* Google icons  */
 
 .material-symbols-outlined {
@@ -389,8 +402,9 @@ article {
 
 .contact-details {
     height: 50vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -400,11 +414,36 @@ article {
     padding: 1rem;
 }
 
+.address {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.address-icon,
+.email-icon,
+.address-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
 .address ul {
-    list-style-type: none;
     margin-top: 0.5rem;
 }
 
+.contacts {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.email-container {
+    display: flex;
+}
+
+.email {
+    font-size: 12px;
+    font-weight: 400;
+}
 /* Footer Section */
 
 footer {
@@ -514,5 +553,9 @@ footer {
     .dynamic-nav-list-active li:hover,
     .dynamic-nav-list li:hover {
         background-color: #ffafcc;
+    }
+    .contact-details {
+        flex-direction: column;
+        height: 100%;
     }
 }

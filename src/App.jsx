@@ -14,6 +14,13 @@ function App() {
     }
     return (
         <div className={overlay ? "container-overlay" : "container"} id="main">
+            <div className="demo">
+                "Please note that all products, prices, and information
+                displayed on this website are for demonstration and portfolio
+                purposes only. They do not represent actual products or services
+                available for purchase. If you have any questions or require
+                further information, please feel free to contact me."
+            </div>
             <Header overlay={handleOverlay} coatainer={handleContainer} />
             <Outlet />
             <Footer />
