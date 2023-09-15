@@ -1,9 +1,9 @@
 import Nav from "./Nav";
 
-const Header = (props) => {
+const Header = ({ overlay }) => {
     return (
         <header>
-            <Nav overlay={props.overlay} container={props.coatainer} />
+            <Nav overlay={overlay} />
         </header>
     );
 };

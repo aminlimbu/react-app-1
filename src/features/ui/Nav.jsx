@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Nav(props) {
+function Nav({ overlay }) {
     const [clicked, setClicked] = useState(false);
     const [active, setActive] = useState(false);
 
-    function handleIcon() {
-        setClicked(!clicked);
-        setActive(!active);
+    function handleClick() {
+        setActive((prevActive) => !active);
+        setClicked((prevClicked) => !clicked);
+        overlay(!active);
     }
     function handleMouseLeave() {
         if (active) {
@@ -16,11 +17,7 @@ function Nav(props) {
         if (clicked) {
             setClicked(false);
         }
-    }
-    if (active) {
-        props.overlay();
-    } else if (!active) {
-        props.container();
+        overlay(false);
     }
 
     return (
@@ -45,7 +42,7 @@ function Nav(props) {
                 </ul>
             </div>
             <div className="nav-collapsed" onMouseLeave={handleMouseLeave}>
-                <div className="menu-icon" onClick={handleIcon}>
+                <div className="menu-icon" onClick={handleClick}>
                     <button className="material-symbols-outlined">
                         {clicked ? "close" : "menu"}
                     </button>

@@ -5,13 +5,10 @@ import { Outlet } from "react-router-dom";
 function App() {
     const [overlay, setOverlay] = useState(false);
 
-    function handleOverlay() {
-        setOverlay(true);
+    function handleOverlay(check) {
+        setOverlay(check);
     }
 
-    function handleContainer() {
-        setOverlay(false);
-    }
     return (
         <div className={overlay ? "container-overlay" : "container"} id="main">
             <div className="demo">
@@ -21,7 +18,7 @@ function App() {
                 available for purchase. If you have any questions or require
                 further information, please feel free to contact me."
             </div>
-            <Header overlay={handleOverlay} coatainer={handleContainer} />
+            <Header overlay={handleOverlay} />
             <Outlet />
             <Footer />
         </div>
