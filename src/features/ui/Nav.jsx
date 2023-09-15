@@ -34,6 +34,9 @@ function Nav({ overlay }) {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
+                        <Link to="/products">Products</Link>
+                    </li>
+                    <li>
                         <Link to="/about">About</Link>
                     </li>
                     <li>
@@ -51,6 +54,9 @@ function Nav({ overlay }) {
                     <ul className="dynamic-nav-list" id="mobile-list-items">
                         <Link to="/">
                             <li>Home</li>
+                        </Link>
+                        <Link to="/products">
+                            <li>Products</li>
                         </Link>
                         <Link to="/about">
                             <li>About</li>

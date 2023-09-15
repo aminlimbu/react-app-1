@@ -15,8 +15,7 @@ function App() {
                 "Please note that all products, prices, and information
                 displayed on this website are for demonstration and portfolio
                 purposes only. They do not represent actual products or services
-                available for purchase. If you have any questions or require
-                further information, please feel free to contact me."
+                offered from this domain."
             </div>
             <Header overlay={handleOverlay} />
             <Outlet />

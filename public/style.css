@@ -19,6 +19,10 @@ body {
     width: 100%;
     text-align: center;
     border: 0 0 1px 0 solid black;
+    transition: 0.3s ease-in;
+    &:hover {
+        font-size: 1rem;
+    }
 }
 
 .container {
@@ -70,7 +74,7 @@ header {
     width: 100%;
 }
 
-header a {
+a {
     color: inherit;
     text-decoration: none;
 }
@@ -144,6 +148,7 @@ header a {
     background-position: center;
     background-size: cover;
     padding: 2rem;
+    margin-bottom: 1rem;
     position: relative;
     height: 40vh;
     min-height: 600px;
@@ -184,7 +189,7 @@ header a {
     display: flex;
     position: relative;
     background-color: #002f4b20;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     height: 3rem;
     width: 100%;
     z-index: -1;
@@ -211,7 +216,7 @@ header a {
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
-    margin-top: 2rem;
+    margin-bottom: 5rem;
     width: 100%;
 }
 
@@ -224,8 +229,9 @@ header a {
     justify-content: center;
     background-color: #002f4b10;
     width: 100%;
-    margin: 0 1rem;
-    padding: 0 0 1rem 0;
+    max-width: 350px;
+    text-decoration: none;
+    margin: 0 auto;
     border: 2px solid #00000020;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -235,21 +241,23 @@ header a {
     height: 200px;
     width: 100%;
     margin-bottom: auto;
-
     overflow: hidden;
     background-position: center center;
     background-size: cover;
 }
-.card img {
+.card-image {
     width: 100%;
     object-fit: cover;
+    margin-bottom: 2rem;
 }
 
 .card h2 {
-    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 .card p {
-    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    padding: 0.5rem;
+    text-align: center;
 }
 
 /* Our story */
@@ -257,12 +265,14 @@ header a {
 .our-story {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-bottom: 3rem;
     width: 100%;
 }
 
 .our-story h2 {
     text-align: center;
+    width: 700;
+    font-size: 3rem;
 }
 
 .story {
@@ -297,6 +307,99 @@ header a {
 article {
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* Products Page Section */
+.product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.product-banner {
+    height: 40vh;
+    width: 100%;
+    background-image: url("https://picsum.photos/600/400?grayscale");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+
+.catalogue-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+.catalogue {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Landing Page Section */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.product-title {
+    margin-bottom: 2rem;
+    font-weight: 900;
+    padding: 1rem;
+    margin-right: auto;
+}
+.landing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.landing-image {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 2rem;
+}
+
+.landing-image img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.description {
+    padding: 2rem;
+    background-color: #c3c3c3;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.specifications {
+    padding: 1rem;
+    background-color: #efefef;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.specifications table {
+    border-spacing: 5px;
 }
 
 /* About us page */
@@ -404,14 +507,22 @@ article {
     height: 50vh;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .address-container,
 .map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     width: 100%;
     padding: 1rem;
+}
+
+.address-container {
+    padding-left: 5rem;
 }
 
 .address {
@@ -431,9 +542,21 @@ article {
     margin-top: 0.5rem;
 }
 
+.center-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-container {
+    margin-bottom: 1rem;
+    display: flex;
+}
+
 .contacts {
     display: flex;
-    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .email-container {
@@ -441,6 +564,9 @@ article {
 }
 
 .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
     font-weight: 400;
 }
@@ -473,6 +599,9 @@ footer {
 
     .card {
         margin-top: 1rem;
+    }
+    .catalogue {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -557,5 +686,8 @@ footer {
     .contact-details {
         flex-direction: column;
         height: 100%;
+    }
+    .catalogue {
+        grid-template-columns: 1fr 1fr;
     }
 }
