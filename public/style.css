@@ -33,7 +33,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 1200px;
-    min-width: 430px;
+    min-width: 375px;
     margin: 0 auto;
 }
 
@@ -290,7 +290,6 @@ a {
     justify-content: center;
     background-color: #002f4b10;
     width: 100%;
-    min-width: 200px;
     text-decoration: none;
     margin: 0 auto;
     border: 2px solid #00000020;
@@ -769,6 +768,6 @@ footer {
         height: 100%;
     }
     .catalogue {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
