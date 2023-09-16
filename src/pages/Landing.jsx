@@ -6,6 +6,12 @@ function displayInfo(id) {
     const item = candles.filter((i) => {
         return i.name === id;
     });
+    const candleCollection = item[0].collection
+        .map((string) => {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        })
+        .join(", ");
+
     return (
         <div className="landing-section">
             <div className="landing-image">
@@ -49,19 +55,19 @@ function displayInfo(id) {
                         </tr>
                         <tr>
                             <td>Collection: </td>
-                            <td>{item[0].collection}</td>
+                            <td>{candleCollection}</td>
                         </tr>
                         <tr>
                             <td>Burn Duration: </td>
-                            <td>{item[0].burn_time}</td>
+                            <td>{item[0].burn_time + " Hours"}</td>
                         </tr>
                         <tr>
                             <td>Dimension: </td>
                             <td>
                                 {item[0].height +
-                                    "cm x " +
+                                    " cm x " +
                                     item[0].width +
-                                    "cm x " +
+                                    " cm x " +
                                     item[0].depth +
                                     " cm"}
                             </td>

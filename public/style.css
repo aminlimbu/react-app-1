@@ -210,14 +210,71 @@ a {
 }
 
 /* Featured Items */
+.featured-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
 
+.featured-section h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 .featured {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 5rem;
     width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: start;
+    margin-bottom: 5rem;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.featured-cards {
+    min-width: 350px;
+    margin: 0 12px;
+}
+
+.featured-lbutton,
+.featured-rbutton {
+    position: absolute;
+    width: 5rem;
+    height: 100%;
+    font-size: 5rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    text-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(2);
+    }
+}
+
+.featured-lbutton {
+    left: 0;
+}
+
+.featured-rbutton {
+    right: 0;
 }
 
 /* Card Component Style */
@@ -235,6 +292,10 @@ a {
     border: 2px solid #00000020;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .card-image {
@@ -390,6 +451,10 @@ article {
     margin-bottom: 2rem;
 }
 
+.description p {
+    margin-bottom: 0.8rem;
+}
+
 .specifications {
     padding: 1rem;
     background-color: #efefef;
@@ -400,6 +465,11 @@ article {
 
 .specifications table {
     border-spacing: 5px;
+}
+
+.specifications h2 {
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
 }
 
 /* About us page */

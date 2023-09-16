@@ -9,6 +9,7 @@ const candles = [
         width: 7,
         depth: 10,
         collection: ["romance"],
+        featured: "Yes",
     },
     {
         name: "Candle 2",
@@ -20,6 +21,7 @@ const candles = [
         width: 6,
         depth: 10,
         collection: ["romance", "zodiac", "signature"],
+        featured: "No",
     },
     {
         name: "Candle 3",
@@ -31,6 +33,7 @@ const candles = [
         width: 8,
         depth: 5,
         collection: ["romance", "zodiac", "signature"],
+        featured: "No",
     },
     {
         name: "Candle 4",
@@ -42,6 +45,7 @@ const candles = [
         width: 5,
         depth: 8,
         collection: ["romance", "zodiac", "signature"],
+        featured: "Yes",
     },
     {
         name: "Candle 5",
@@ -53,6 +57,7 @@ const candles = [
         width: 9,
         depth: 8,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 6",
@@ -64,6 +69,7 @@ const candles = [
         width: 5,
         depth: 8,
         collection: ["romance", "zodiac"],
+        featured: "Yes",
     },
     {
         name: "Candle 7",
@@ -75,6 +81,7 @@ const candles = [
         width: 9,
         depth: 5,
         collection: ["romance", "zodiac", "signature"],
+        featured: "No",
     },
     {
         name: "Candle 8",
@@ -86,6 +93,7 @@ const candles = [
         width: 5,
         depth: 9,
         collection: ["romance", "zodiac"],
+        featured: "No",
     },
     {
         name: "Candle 9",
@@ -97,6 +105,7 @@ const candles = [
         width: 6,
         depth: 6,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 10",
@@ -108,6 +117,7 @@ const candles = [
         width: 6,
         depth: 9,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 11",
@@ -119,6 +129,7 @@ const candles = [
         width: 9,
         depth: 10,
         collection: ["romance", "zodiac", "signature"],
+        featured: "Yes",
     },
     {
         name: "Candle 12",
@@ -130,6 +141,7 @@ const candles = [
         width: 7,
         depth: 9,
         collection: ["romance", "zodiac", "signature"],
+        featured: "No",
     },
     {
         name: "Candle 13",
@@ -141,6 +153,7 @@ const candles = [
         width: 7,
         depth: 6,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 14",
@@ -152,6 +165,7 @@ const candles = [
         width: 8,
         depth: 7,
         collection: ["romance", "zodiac", "signature"],
+        featured: "No",
     },
     {
         name: "Candle 15",
@@ -163,6 +177,7 @@ const candles = [
         width: 8,
         depth: 10,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 16",
@@ -174,6 +189,7 @@ const candles = [
         width: 9,
         depth: 7,
         collection: ["romance", "zodiac"],
+        featured: "Yes",
     },
     {
         name: "Candle 17",
@@ -185,6 +201,7 @@ const candles = [
         width: 8,
         depth: 5,
         collection: ["romance", "zodiac"],
+        featured: "No",
     },
     {
         name: "Candle 18",
@@ -196,6 +213,7 @@ const candles = [
         width: 8,
         depth: 7,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 19",
@@ -207,6 +225,7 @@ const candles = [
         width: 8,
         depth: 6,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 20",
@@ -218,6 +237,7 @@ const candles = [
         width: 9,
         depth: 10,
         collection: ["romance", "zodiac", "signature"],
+        featured: "Yes",
     },
     {
         name: "Candle 21",
@@ -229,6 +249,7 @@ const candles = [
         width: 5,
         depth: 6,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 22",
@@ -240,6 +261,7 @@ const candles = [
         width: 10,
         depth: 9,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 23",
@@ -251,6 +273,7 @@ const candles = [
         width: 9,
         depth: 6,
         collection: ["romance", "zodiac"],
+        featured: "NO",
     },
     {
         name: "Candle 24",
@@ -262,6 +285,7 @@ const candles = [
         width: 8,
         depth: 10,
         collection: ["romance", "zodiac"],
+        featured: "Yes",
     },
     {
         name: "Candle 25",
@@ -273,6 +297,7 @@ const candles = [
         width: 8,
         depth: 5,
         collection: ["romance", "zodiac"],
+        featured: "No",
     },
     {
         name: "Candle 26",
@@ -284,6 +309,7 @@ const candles = [
         width: 5,
         depth: 6,
         collection: ["romance", "zodiac", "signature"],
+        featured: "No",
     },
     {
         name: "Candle 27",
@@ -295,6 +321,7 @@ const candles = [
         width: 10,
         depth: 6,
         collection: ["romance", "zodiac", "signature"],
+        featured: "Yes",
     },
     {
         name: "Candle 28",
@@ -306,6 +333,7 @@ const candles = [
         width: 8,
         depth: 6,
         collection: ["romance", "zodiac"],
+        featured: "No",
     },
     {
         name: "Candle 29",
@@ -317,6 +345,7 @@ const candles = [
         width: 9,
         depth: 8,
         collection: ["romance", "zodiac"],
+        featured: "No",
     },
     {
         name: "Candle 30",
@@ -328,6 +357,7 @@ const candles = [
         width: 6,
         depth: 5,
         collection: ["romance"],
+        featured: "Yes",
     },
     {
         name: "Candle 31",
@@ -339,6 +369,7 @@ const candles = [
         width: 5,
         depth: 6,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 32",
@@ -350,6 +381,7 @@ const candles = [
         width: 7,
         depth: 10,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 33",
@@ -361,6 +393,7 @@ const candles = [
         width: 9,
         depth: 7,
         collection: ["romance", "zodiac", "signature"],
+        featured: "Yes",
     },
     {
         name: "Candle 34",
@@ -372,6 +405,7 @@ const candles = [
         width: 9,
         depth: 5,
         collection: ["romance", "zodiac"],
+        featured: "No",
     },
     {
         name: "Candle 35",
@@ -383,6 +417,7 @@ const candles = [
         width: 8,
         depth: 6,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 36",
@@ -394,6 +429,7 @@ const candles = [
         width: 5,
         depth: 7,
         collection: ["romance", "zodiac", "signature"],
+        featured: "Yes",
     },
     {
         name: "Candle 37",
@@ -405,6 +441,7 @@ const candles = [
         width: 7,
         depth: 8,
         collection: ["romance", "zodiac"],
+        featured: "No",
     },
     {
         name: "Candle 38",
@@ -416,6 +453,7 @@ const candles = [
         width: 5,
         depth: 8,
         collection: ["romance", "zodiac"],
+        featured: "Yes",
     },
     {
         name: "Candle 39",
@@ -427,6 +465,7 @@ const candles = [
         width: 6,
         depth: 6,
         collection: ["romance", "zodiac"],
+        featured: "No",
     },
     {
         name: "Candle 40",
@@ -438,6 +477,7 @@ const candles = [
         width: 7,
         depth: 10,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 41",
@@ -449,6 +489,7 @@ const candles = [
         width: 7,
         depth: 5,
         collection: ["romance", "zodiac"],
+        featured: "Yes",
     },
     {
         name: "Candle 42",
@@ -460,6 +501,7 @@ const candles = [
         width: 7,
         depth: 8,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 43",
@@ -471,6 +513,7 @@ const candles = [
         width: 6,
         depth: 5,
         collection: ["romance"],
+        featured: "Yes",
     },
     {
         name: "Candle 44",
@@ -482,6 +525,7 @@ const candles = [
         width: 10,
         depth: 8,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 45",
@@ -493,6 +537,7 @@ const candles = [
         width: 10,
         depth: 10,
         collection: ["romance", "zodiac", "signature"],
+        featured: "No",
     },
     {
         name: "Candle 46",
@@ -504,6 +549,7 @@ const candles = [
         width: 9,
         depth: 5,
         collection: ["romance"],
+        featured: "No",
     },
     {
         name: "Candle 47",
@@ -515,6 +561,7 @@ const candles = [
         width: 6,
         depth: 6,
         collection: ["romance", "zodiac"],
+        featured: "Yes",
     },
     {
         name: "Candle 48",
@@ -526,6 +573,7 @@ const candles = [
         width: 7,
         depth: 7,
         collection: ["romance", "zodiac", "signature"],
+        featured: "No",
     },
     {
         name: "Candle 49",
@@ -537,6 +585,7 @@ const candles = [
         width: 6,
         depth: 10,
         collection: ["romance", "zodiac"],
+        featured: "No",
     },
     {
         name: "Candle 50",
@@ -548,6 +597,7 @@ const candles = [
         width: 10,
         depth: 8,
         collection: ["romance"],
+        featured: "No",
     },
 ];
 

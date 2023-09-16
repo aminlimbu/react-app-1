@@ -1,4 +1,6 @@
 import Card from "features/ui/Cards";
+import candles from "resources/candles";
+import { getCandleImage } from "features/utils/images";
 
 const Hero = () => {
     return (
@@ -14,29 +16,56 @@ const Hero = () => {
 };
 
 const Featured = () => {
+    const featuredItems = candles.filter((item) => item.featured === "Yes");
+    function handleSlide(e) {
+        const featureContainer = document.querySelector(".featured-container");
+        if (e.target.name === "rightButton") {
+            const width = featureContainer.clientWidth;
+            featureContainer.scrollLeft += width;
+        }
+        if (e.target.name === "leftButton") {
+            const width = featureContainer.clientWidth;
+            featureContainer.scrollLeft -= width;
+        }
+    }
+    const createFeaturedCards = (items) => {
+        const cards = Object.keys(items).map((key) => {
+            return (
+                <div className="featured-cards">
+                    <Card
+                        name={items[key].name}
+                        imagelink={getCandleImage(items[key].colour)}
+                        description={items[key].description}
+                    />
+                </div>
+            );
+        });
+        return cards;
+    };
     return (
-        <div className="featured">
-            <Card
-                name={"Handmaiden Secret"}
-                imagelink={
-                    "https://butterflybeautyshop.files.wordpress.com/2015/02/candle-bath-salts-from-lavender-oil.jpg"
-                }
-                description={"Evergreen Lavendar"}
-            />
-            <Card
-                name={"Secret Admire"}
-                imagelink={
-                    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.etsystatic.com%2F8841137%2Fr%2Fil%2F931ed7%2F1127687844%2Fil_fullxfull.1127687844_o1lo.jpg&f=1&nofb=1&ipt=ad826c41dfcd9252bf7ad8e024829c68c3f3878d8c631088ad8e5bb03a824075&ipo=images"
-                }
-                description={"Hint of Cherry, Tomato, Grapes"}
-            />
-            <Card
-                name={"Lime The Bold"}
-                imagelink={
-                    "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0163%2F3546%2Fproducts%2Flime_green_floating_candles_1024x1024.gif%3Fv%3D1365893562&f=1&nofb=1&ipt=2768fb52c4643aeb2deeb7249ca1a0fc061974c5b54eb77b465254275f328dc2&ipo=images"
-                }
-                description={"Exquisite Blend of Lime, Bayleaf, Turmeric"}
-            />
+        <div className="featured-section">
+            <h2>Featured Items</h2>
+            <div className="featured">
+                <button
+                    key="buttonLeft"
+                    className="featured-lbutton material-symbols-outlined"
+                    onClick={handleSlide}
+                    name="leftButton"
+                >
+                    arrow_circle_left
+                </button>
+                <div key="carousel" className="featured-container">
+                    {createFeaturedCards(featuredItems)}
+                </div>
+                <button
+                    key="buttonRight"
+                    className="featured-rbutton material-symbols-outlined"
+                    onClick={handleSlide}
+                    name="rightButton"
+                >
+                    arrow_circle_right
+                </button>
+            </div>
         </div>
     );
 };
