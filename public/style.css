@@ -650,6 +650,20 @@ article {
     font-size: 12px;
     font-weight: 400;
 }
+
+/* Page Not Found Page Section */
+.page-not-found {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/candles-hero-1.jpeg");
+    color: rgb(163, 163, 163);
+    font-size: 50px;
+    font-weight: 600;
+}
+
 /* Footer Section */
 
 footer {
@@ -734,8 +748,12 @@ footer {
 
     .menu-icon {
         z-index: 5;
-        padding: 5px;
+        /* padding: 5px; */
+        position: absolute;
+        top: 5px;
+        right: 5px;
         margin-left: auto;
+        height: 100%;
     }
     .dynamic-nav-list {
         list-style-type: none;
