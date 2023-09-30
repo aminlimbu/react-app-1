@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
+:root {
+    --primary-color: #a2678a;
+    --dark-color: #333;
+    --light-color: #eeeeee;
+}
 * {
     padding: 0;
     margin: 0;
@@ -11,6 +16,14 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+
+/*  */
+/*  */
+/*  */
+/* Utilities */
+/*  */
+/*  */
+/*  */
 
 .demo {
     font-size: 7px;
@@ -26,15 +39,11 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     width: 100%;
     max-width: 1200px;
     min-width: 375px;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .container-overlay {
@@ -60,6 +69,21 @@ ul {
     text-decoration: none;
     list-style-type: none;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 /* Google icons  */
 
 .material-symbols-outlined {
@@ -139,6 +163,15 @@ a {
 .nav-collapsed {
     display: none;
 }
+
+/*  */
+/*  */
+/*  */ /* 
+Home Page
+*/
+/*  */
+/*  */
+/*  */
 
 /* hero section */
 
@@ -297,7 +330,7 @@ a {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.2s ease-in-out;
     &:hover {
-        transform: scale(1.05);
+        transform: scale(0.98);
     }
 }
 
@@ -374,14 +407,21 @@ article {
     margin-top: 2rem;
 }
 
-/* Products Page Section */
-.product-container {
+/*  */
+/*  */
+/*  */
+/* PRODUCT CATALOGUE PAGE */
+/*  */
+/*  */
+/*  */
+
+/* .product-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-}
+} */
 
 .product-banner {
     height: 40vh;
@@ -391,6 +431,10 @@ article {
     background-position: center;
     background-size: cover;
     margin-bottom: 3rem;
+}
+
+.catalogue-categories {
+    margin-bottom: 2rem;
 }
 
 .catalogue-container {
@@ -403,11 +447,33 @@ article {
     padding: 0 12px;
     margin: 0 auto;
 }
-.catalogue {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    width: 100%;
+
+.catalogue-categories .grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.collections .material-symbols-outlined {
+    font-size: 4rem;
+    color: rgba(211, 106, 123, 0.699);
+}
+
+.collections .flex {
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.collection-icons {
+    margin-bottom: 1rem;
+}
+
+.collection-text {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.catalogue-container .grid {
+    grid-template-columns: repeat(4, 1fr);
+    /* width: 100%; */
     margin: 0 auto;
 }
 
@@ -482,7 +548,13 @@ article {
     margin-bottom: 1rem;
 }
 
+/*  */
+/*  */
+/*  */
 /* About us page */
+/*  */
+/*  */
+/*  */
 
 .about-top {
     font-family: "Josefin Sans", sans-serif;
@@ -546,15 +618,21 @@ article {
     margin-top: 1rem;
 }
 
-/* Contact us page */
+/*  */
+/*  */
+/*  */
+/* CONTACT US PAGE */
+/*  */
+/*  */
+/*  */
 
-.contact-us {
+/* .contact-us {
     height: 100%;
     width: 100%;
-}
+} */
 
 .contact-hero {
-    height: 30vh;
+    height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -584,10 +662,6 @@ article {
 }
 
 .contact-details {
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -601,9 +675,9 @@ article {
     padding: 1rem;
 }
 
-.address-container {
+/* .address-container {
     padding-left: 5rem;
-}
+} */
 
 .address {
     display: flex;
@@ -677,9 +751,14 @@ footer {
     border-top: 2px solid rgba(91, 90, 90, 0.49);
 }
 
-/* Media Query */
+/*  */
+/*  */
+/* MEDIA QUERIES */
+/*  */
+/*  */
 
-@media (max-width: 780px) {
+/* Tablets and Samll */
+@media (max-width: 768px) {
     .hero {
         width: 100%;
     }
@@ -690,7 +769,9 @@ footer {
         padding: 0 1rem;
         min-height: 300px;
     }
-
+    .catalogue-container .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
     .card {
         margin-top: 1rem;
     }
@@ -699,6 +780,7 @@ footer {
     }
 }
 
+/* Mobile Devices */
 @media (max-width: 520px) {
     .hero h1 {
         bottom: 15rem;
@@ -785,7 +867,8 @@ footer {
         flex-direction: column;
         height: 100%;
     }
-    .catalogue {
+    .catalogue-container .grid {
         grid-template-columns: 1fr;
+        width: 100%;
     }
 }

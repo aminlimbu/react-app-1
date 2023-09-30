@@ -13,7 +13,7 @@ function displayInfo(id) {
         .join(", ");
 
     return (
-        <div className="landing-section">
+        <div className="container landing-section">
             <div className="landing-image">
                 <img src={getCandleImage(item[0].colour)} alt="candle"></img>
             </div>

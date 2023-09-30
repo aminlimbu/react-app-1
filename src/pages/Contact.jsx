@@ -20,8 +20,8 @@ const Contact = () => {
     };
     return (
         <div className="contact-us">
-            <div className="contact-hero">Contact us</div>
-            <div className="contact-details">
+            <div className="container contact-hero">Contact us</div>
+            <div className="container grid contact-details">
                 <div className="address-container">
                     <h2>Address:</h2>
                     <address className="address">
