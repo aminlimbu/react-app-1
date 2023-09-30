@@ -1,6 +1,6 @@
 const candles = [
     {
-        name: "Candle 1",
+        name: "Sandalwood Sunset",
         description: "A beautiful Red candle with a Sandalwood fragrance.",
         burn_time: 3,
         colour: "Yellow",
@@ -12,7 +12,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 2",
+        name: "Vanilla Dreams",
         description: "A beautiful Red candle with a Vanilla fragrance.",
         burn_time: 9,
         colour: "Blue",
@@ -24,7 +24,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 3",
+        name: "Rose Bliss",
         description: "A beautiful Purple candle with a Rose fragrance.",
         burn_time: 10,
         colour: "Green",
@@ -36,7 +36,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 4",
+        name: "Lavender Meadows",
         description: "A beautiful Green candle with a Rose fragrance.",
         burn_time: 4,
         colour: "Purple",
@@ -48,7 +48,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 5",
+        name: "Blue Serenity",
         description: "A beautiful Blue candle with a Vanilla fragrance.",
         burn_time: 5,
         colour: "Red",
@@ -60,7 +60,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 6",
+        name: "Green Enchantment",
         description: "A beautiful Green candle with a Lavender fragrance.",
         burn_time: 10,
         colour: "Yellow",
@@ -72,7 +72,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 7",
+        name: "Yellow Delight",
         description: "A beautiful Yellow candle with a Vanilla fragrance.",
         burn_time: 10,
         colour: "Blue",
@@ -84,7 +84,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 8",
+        name: "Lavender Elegance",
         description: "A beautiful Yellow candle with a Lavender fragrance.",
         burn_time: 9,
         colour: "Yellow",
@@ -96,7 +96,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 9",
+        name: "Vanilla Twilight",
         description: "A beautiful Red candle with a Vanilla fragrance.",
         burn_time: 9,
         colour: "Blue",
@@ -108,7 +108,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 10",
+        name: "Lavender Serenity",
         description: "A beautiful Blue candle with a Lavender fragrance.",
         burn_time: 5,
         colour: "Purple",
@@ -120,7 +120,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 11",
+        name: "Rose Harmony",
         description: "A beautiful Purple candle with a Rose fragrance.",
         burn_time: 5,
         colour: "Purple",
@@ -132,7 +132,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 12",
+        name: "Rose Serenity",
         description: "A beautiful Blue candle with a Rose fragrance.",
         burn_time: 9,
         colour: "Blue",
@@ -144,7 +144,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 13",
+        name: "Rose Tranquility",
         description: "A beautiful Purple candle with a Rose fragrance.",
         burn_time: 10,
         colour: "Green",
@@ -156,7 +156,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 14",
+        name: "Rose Enchantment",
         description: "A beautiful Red candle with a Rose fragrance.",
         burn_time: 4,
         colour: "Purple",
@@ -168,7 +168,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 15",
+        name: "Lavender Dreams",
         description: "A beautiful Yellow candle with a Lavender fragrance.",
         burn_time: 9,
         colour: "Purple",
@@ -180,7 +180,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 16",
+        name: "Vanilla Serenity",
         description: "A beautiful Blue candle with a Vanilla fragrance.",
         burn_time: 3,
         colour: "Red",
@@ -192,7 +192,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 17",
+        name: "Vanilla Serenity",
         description: "A beautiful Blue candle with a Vanilla fragrance.",
         burn_time: 4,
         colour: "Green",
@@ -204,7 +204,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 18",
+        name: "Sandalwood Breeze",
         description: "A beautiful Blue candle with a Sandalwood fragrance.",
         burn_time: 7,
         colour: "Yellow",
@@ -216,7 +216,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 19",
+        name: "Vanilla Delight",
         description: "A beautiful Blue candle with a Vanilla fragrance.",
         burn_time: 8,
         colour: "Red",
@@ -228,7 +228,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 20",
+        name: "Rose Serenity",
         description: "A beautiful Blue candle with a Rose fragrance.",
         burn_time: 6,
         colour: "Red",
@@ -240,7 +240,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 21",
+        name: "Lavender Enchantment",
         description: "A beautiful Green candle with a Lavender fragrance.",
         burn_time: 5,
         colour: "Purple",
@@ -252,7 +252,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 22",
+        name: "Sandalwood Sunset",
         description: "A beautiful Yellow candle with a Sandalwood fragrance.",
         burn_time: 4,
         colour: "Green",
@@ -264,7 +264,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 23",
+        name: "Rose Serenity",
         description: "A beautiful Blue candle with a Rose fragrance.",
         burn_time: 8,
         colour: "Green",
@@ -273,10 +273,10 @@ const candles = [
         width: 9,
         depth: 6,
         collection: ["romance", "zodiac"],
-        featured: "NO",
+        featured: "No",
     },
     {
-        name: "Candle 24",
+        name: "Vanilla Bliss",
         description: "A beautiful Green candle with a Vanilla fragrance.",
         burn_time: 6,
         colour: "Purple",
@@ -288,7 +288,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 25",
+        name: "Vanilla Serenity",
         description: "A beautiful Blue candle with a Vanilla fragrance.",
         burn_time: 4,
         colour: "Green",
@@ -300,7 +300,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 26",
+        name: "Rose Breeze",
         description: "A beautiful Green candle with a Rose fragrance.",
         burn_time: 3,
         colour: "Purple",
@@ -312,7 +312,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 27",
+        name: "Vanilla Tranquility",
         description: "A beautiful Yellow candle with a Rose fragrance.",
         burn_time: 6,
         colour: "Red",
@@ -324,7 +324,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 28",
+        name: "Sandalwood Delight",
         description: "A beautiful Yellow candle with a Sandalwood fragrance.",
         burn_time: 9,
         colour: "Purple",
@@ -336,7 +336,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 29",
+        name: "Sandalwood Sunset",
         description: "A beautiful Red candle with a Sandalwood fragrance.",
         burn_time: 7,
         colour: "Green",
@@ -348,8 +348,8 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 30",
-        description: "A beautiful Blue candle with a Rose fragrance.",
+        name: "Vanilla Serenity",
+        description: "A beautiful Blue candle with a Vanilla fragrance.",
         burn_time: 8,
         colour: "Blue",
         fragrance: "Sandalwood",
@@ -360,7 +360,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 31",
+        name: "Lavender Bliss",
         description: "A beautiful Purple candle with a Rose fragrance.",
         burn_time: 4,
         colour: "Yellow",
@@ -372,7 +372,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 32",
+        name: "Vanilla Harmony",
         description: "A beautiful Blue candle with a Vanilla fragrance.",
         burn_time: 10,
         colour: "Red",
@@ -384,7 +384,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 33",
+        name: "Rose Elegance",
         description: "A beautiful Green candle with a Rose fragrance.",
         burn_time: 3,
         colour: "Red",
@@ -396,7 +396,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 34",
+        name: "Lavender Delight",
         description: "A beautiful Yellow candle with a Sandalwood fragrance.",
         burn_time: 4,
         colour: "Green",
@@ -408,7 +408,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 35",
+        name: "Rose Tranquility",
         description: "A beautiful Yellow candle with a Rose fragrance.",
         burn_time: 6,
         colour: "Red",
@@ -420,7 +420,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 36",
+        name: "Lavender Enchantment",
         description: "A beautiful Green candle with a Lavender fragrance.",
         burn_time: 6,
         colour: "Yellow",
@@ -432,7 +432,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 37",
+        name: "Sandalwood Bliss",
         description: "A beautiful Purple candle with a Sandalwood fragrance.",
         burn_time: 7,
         colour: "Purple",
@@ -444,7 +444,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 38",
+        name: "Lavender Harmony",
         description: "A beautiful Purple candle with a Lavender fragrance.",
         burn_time: 8,
         colour: "Blue",
@@ -456,8 +456,8 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 39",
-        description: "A beautiful Yellow candle with a Vanilla fragrance.",
+        name: "Vanilla Tranquility",
+        description: "A beautiful Yellow candle with a Rose fragrance.",
         burn_time: 3,
         colour: "Green",
         fragrance: "Rose",
@@ -468,7 +468,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 40",
+        name: "Sandalwood Serenity",
         description: "A beautiful Purple candle with a Sandalwood fragrance.",
         burn_time: 4,
         colour: "Purple",
@@ -480,7 +480,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 41",
+        name: "Rose Enchantment",
         description: "A beautiful Purple candle with a Rose fragrance.",
         burn_time: 6,
         colour: "Yellow",
@@ -492,7 +492,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 42",
+        name: "Sandalwood Breeze",
         description: "A beautiful Green candle with a Rose fragrance.",
         burn_time: 6,
         colour: "Purple",
@@ -504,7 +504,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 43",
+        name: "Vanilla Elegance",
         description: "A beautiful Yellow candle with a Vanilla fragrance.",
         burn_time: 6,
         colour: "Yellow",
@@ -516,7 +516,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 44",
+        name: "Blue Serenity",
         description: "A beautiful Blue candle with a Sandalwood fragrance.",
         burn_time: 3,
         colour: "Red",
@@ -528,7 +528,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 45",
+        name: "Sandalwood Harmony",
         description: "A beautiful Yellow candle with a Sandalwood fragrance.",
         burn_time: 9,
         colour: "Green",
@@ -540,7 +540,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 46",
+        name: "Rose Delight",
         description: "A beautiful Red candle with a Rose fragrance.",
         burn_time: 9,
         colour: "Yellow",
@@ -552,7 +552,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 47",
+        name: "Sandalwood Elegance",
         description: "A beautiful Blue candle with a Sandalwood fragrance.",
         burn_time: 8,
         colour: "Green",
@@ -564,7 +564,7 @@ const candles = [
         featured: "Yes",
     },
     {
-        name: "Candle 48",
+        name: "Vanilla Breeze",
         description: "A beautiful Green candle with a Vanilla fragrance.",
         burn_time: 4,
         colour: "Yellow",
@@ -576,7 +576,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 49",
+        name: "Sandalwood Bliss",
         description: "A beautiful Blue candle with a Sandalwood fragrance.",
         burn_time: 9,
         colour: "Green",
@@ -588,7 +588,7 @@ const candles = [
         featured: "No",
     },
     {
-        name: "Candle 50",
+        name: "Vanilla Harmony",
         description: "A beautiful Purple candle with a Vanilla fragrance.",
         burn_time: 8,
         colour: "Blue",

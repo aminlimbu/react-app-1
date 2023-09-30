@@ -12,6 +12,7 @@ const createCandles = (candles) => {
             name={candle.name}
             fragrance={candle.fragrance}
             description={candle.description}
+            className="flex"
         />
     ));
 };

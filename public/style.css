@@ -344,11 +344,15 @@ Home Page
     background-size: cover;
 }
 
-.card h2 {
-    margin-bottom: 0.5rem;
+.card-desc {
+    padding: 0.5rem;
 }
-.card p {
-    margin-bottom: 0.2rem;
+
+.card-desc h2 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+.card-desc p {
     padding: 0.5rem;
     text-align: center;
 }
@@ -415,14 +419,6 @@ article {
 /*  */
 /*  */
 
-/* .product-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-} */
-
 .product-banner {
     height: 40vh;
     min-height: 350px;
@@ -435,17 +431,6 @@ article {
 
 .catalogue-categories {
     margin-bottom: 2rem;
-}
-
-.catalogue-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 0 12px;
-    margin: 0 auto;
 }
 
 .catalogue-categories .grid {
@@ -473,21 +458,25 @@ article {
 }
 .catalogue-container .grid {
     grid-template-columns: repeat(4, 1fr);
-    /* width: 100%; */
-    margin: 0 auto;
+}
+
+.catalogue-container .card {
+    height: 100%;
+    justify-content: start;
 }
 
 /* Landing Page Section */
 .landing-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    max-width: 800px;
-    padding: 0 1rem;
 }
 
+.landing-container .flex {
+    flex-direction: column;
+}
+
+.landing-container .grid {
+    grid-template-columns: 4fr 2fr;
+}
 .product-title {
     margin-bottom: 2rem;
     font-weight: 900;
@@ -514,8 +503,6 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* object-fit: cover;
-    overflow: hidden; */
 }
 
 .description {
@@ -546,6 +533,11 @@ article {
 .specifications h2 {
     letter-spacing: 5px;
     margin-bottom: 1rem;
+}
+
+.landing-container .aside {
+    background: linear-gradient(to bottom right, #ffcc0010, #ff660010);
+    margin-bottom: 2rem;
 }
 
 /*  */
@@ -626,11 +618,6 @@ article {
 /*  */
 /*  */
 
-/* .contact-us {
-    height: 100%;
-    width: 100%;
-} */
-
 .contact-hero {
     height: 300px;
     width: 100%;
@@ -674,10 +661,6 @@ article {
     width: 100%;
     padding: 1rem;
 }
-
-/* .address-container {
-    padding-left: 5rem;
-} */
 
 .address {
     display: flex;
@@ -830,7 +813,6 @@ footer {
 
     .menu-icon {
         z-index: 5;
-        /* padding: 5px; */
         position: absolute;
         top: 5px;
         right: 5px;

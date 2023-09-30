@@ -13,7 +13,7 @@ function displayInfo(id) {
         .join(", ");
 
     return (
-        <div className="container landing-section">
+        <div className="landing-section">
             <div className="landing-image">
                 <img src={getCandleImage(item[0].colour)} alt="candle"></img>
             </div>
@@ -83,10 +83,15 @@ const Landing = () => {
     let { id } = useParams();
     return (
         <div className="landing-container">
-            <div className="product-title">
-                <h1>{id}</h1>
+            <div className="container grid ">
+                <div className="flex">
+                    <div className="product-title">
+                        <h1>{id}</h1>
+                    </div>
+                    {displayInfo(id)}
+                </div>
+                <div className="flex aside"></div>
             </div>
-            {displayInfo(id)}
         </div>
     );
 };
