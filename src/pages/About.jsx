@@ -1,10 +1,13 @@
 export const Top = () => {
     return (
         <div className="about-top">
-            <div className="about-title">
+            <div className="about-title-1">
                 THE STORY
                 <br />
-                OF <i>Floral Poison Ivy</i>
+                OF
+            </div>
+            <div className="about-title-2">
+                <i>Floral Poison Ivy</i>
             </div>
         </div>
     );

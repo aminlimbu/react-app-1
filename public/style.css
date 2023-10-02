@@ -253,7 +253,7 @@ Home Page
     align-items: center;
     width: 100%;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .featured-section h2 {
@@ -271,16 +271,19 @@ Home Page
     position: relative;
 }
 
+.featured .card {
+    height: 100%;
+}
 .featured-container {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: start;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
     width: 100%;
     overflow: hidden;
     z-index: 0;
-    transition: 0.3s ease-in-out;
+    transition: 5s ease;
 }
 
 .featured-cards {
@@ -559,15 +562,25 @@ article {
     font-size: 2rem;
     color: #71b280;
     z-index: -1;
-}
-.about-title {
     position: relative;
-    text-align: center;
 }
-.about-top i {
+.about-title-1 {
     position: absolute;
-    bottom: 1;
-    right: 1;
+    text-align: center;
+    top: 45%;
+    left: 41%;
+    animation: slideInFromLeft 0.6s ease-in;
+}
+
+.about-title-2 {
+    position: absolute;
+    right: 49%;
+    top: 52%;
+}
+
+.about-title-2 i {
+    position: absolute;
+    animation: slideInFromRight 0.6s ease-in;
 }
 
 .about-us {
@@ -732,6 +745,29 @@ footer {
     width: 100%;
     bottom: 0;
     border-top: 2px solid rgba(91, 90, 90, 0.49);
+}
+
+/*  */
+/*  */
+/* KEYFRAMES */
+/*  */
+/*  */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(700%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /*  */
