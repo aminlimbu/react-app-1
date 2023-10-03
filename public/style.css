@@ -41,7 +41,7 @@ body {
 .container {
     width: 100%;
     max-width: 1200px;
-    min-width: 375px;
+    /* min-width: 360px; */
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -567,15 +567,18 @@ article {
 .about-title-1 {
     position: absolute;
     text-align: center;
-    top: 45%;
-    left: 41%;
+    font-weight: bold;
+    top: 30%;
+    left: 35%;
     animation: slideInFromLeft 0.6s ease-in;
 }
 
 .about-title-2 {
     position: absolute;
-    right: 49%;
-    top: 52%;
+    left: 45%;
+    top: 37%;
+    font-weight: 900;
+    font-size: 4rem;
 }
 
 .about-title-2 i {
@@ -797,10 +800,22 @@ footer {
     .catalogue {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .about-title-1 {
+        top: 35%;
+    }
+    .about-title-2 {
+        top: 50%;
+        left: 45%;
+        text-align: center;
+        transform: scale(1.2);
+    }
 }
 
 /* Mobile Devices */
 @media (max-width: 520px) {
+    .container {
+        padding: 0;
+    }
     .hero h1 {
         bottom: 15rem;
     }
@@ -885,8 +900,36 @@ footer {
         flex-direction: column;
         height: 100%;
     }
+    .contact-us .grid {
+        grid-template-columns: 1fr;
+    }
+    .address-container {
+        align-items: center;
+    }
     .catalogue-container .grid {
         grid-template-columns: 1fr;
         width: 100%;
+    }
+    .catalogue-categories .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .collections .material-symbols-outlined {
+        font-size: 3rem;
+        color: rgba(211, 106, 123, 0.699);
+    }
+    .about-title-1 {
+        top: 15%;
+        left: 15%;
+    }
+    .about-title-2 {
+        top: 30%;
+        left: 25%;
+        text-align: center;
+        transform: scale(1.2);
+    }
+    .landing-container .grid {
+        grid-template-columns: 1fr;
     }
 }
