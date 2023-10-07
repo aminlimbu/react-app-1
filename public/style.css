@@ -5,6 +5,7 @@
 :root {
     --primary-color: #a2678a;
     --dark-color: #333;
+    --softTextColor: #888;
     --light-color: #eeeeee;
 }
 * {
@@ -17,13 +18,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-/*  */
-/*  */
-/*  */
 /* Utilities */
-/*  */
-/*  */
-/*  */
 
 .demo {
     font-size: 7px;
@@ -41,9 +36,8 @@ body {
 .container {
     width: 100%;
     max-width: 1200px;
-    /* min-width: 360px; */
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 rem;
 }
 
 .container-overlay {
@@ -109,8 +103,10 @@ a {
 
 .nav-bar {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 50px;
     position: relative;
     z-index: 5;
 }
@@ -119,7 +115,7 @@ a {
     display: flex;
     align-items: center;
     justify-items: center;
-    height: 100%;
+    height: 40px;
     padding: 3px;
     border: 0.1px solid black;
     border-radius: 3px;
@@ -138,8 +134,8 @@ a {
 .nav-list {
     list-style-type: none;
     display: flex;
+    gap: 20px;
     flex-direction: row;
-    padding: 4px;
 }
 
 .nav-list li,
@@ -164,14 +160,7 @@ a {
     display: none;
 }
 
-/*  */
-/*  */
-/*  */ /* 
-Home Page
-*/
-/*  */
-/*  */
-/*  */
+/* Home Page */
 
 /* hero section */
 
@@ -279,7 +268,6 @@ Home Page
     flex-direction: row;
     align-items: stretch;
     justify-content: start;
-    /* margin-bottom: 5rem; */
     width: 100%;
     overflow: hidden;
     z-index: 0;
@@ -385,6 +373,7 @@ Home Page
 .story p {
     margin-bottom: 1rem;
     letter-spacing: 1.2px;
+    color: var(--dark-color);
 }
 
 .story-image {
@@ -414,13 +403,7 @@ article {
     margin-top: 2rem;
 }
 
-/*  */
-/*  */
-/*  */
 /* PRODUCT CATALOGUE PAGE */
-/*  */
-/*  */
-/*  */
 
 .product-banner {
     height: 40vh;
@@ -438,6 +421,30 @@ article {
 
 .catalogue-categories .grid {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.catalogue-categories .all-collection {
+    background-color: #cdfad5;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.catalogue-categories .fav-collection {
+    background-color: #f6fdc3;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.catalogue-categories .zodiac-collection {
+    background-color: #dafffb;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.catalogue-categories .sig-collection {
+    background-color: #fde5d4;
+    padding: 20px 0;
+    border-radius: 10px;
 }
 
 .collections .material-symbols-outlined {
@@ -506,6 +513,11 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s ease-in;
+}
+
+.landing-image img:hover {
+    transform: scale(1.1);
 }
 
 .description {
@@ -543,13 +555,7 @@ article {
     margin-bottom: 2rem;
 }
 
-/*  */
-/*  */
-/*  */
 /* About us page */
-/*  */
-/*  */
-/*  */
 
 .about-top {
     font-family: "Josefin Sans", sans-serif;
@@ -558,9 +564,9 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #a2678a;
+    background-color: #f78ca2;
     font-size: 2rem;
-    color: #71b280;
+    color: #451952;
     z-index: -1;
     position: relative;
 }
@@ -626,13 +632,7 @@ article {
     margin-top: 1rem;
 }
 
-/*  */
-/*  */
-/*  */
 /* CONTACT US PAGE */
-/*  */
-/*  */
-/*  */
 
 .contact-hero {
     height: 300px;
@@ -741,20 +741,47 @@ article {
 
 footer {
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding: 2rem;
-    height: 3rem;
+    color: var(--light-color);
+    font-size: 12px;
+    padding: 3rem 2rem;
     width: 100%;
     bottom: 0;
-    border-top: 2px solid rgba(91, 90, 90, 0.49);
+    background-color: #555;
 }
 
-/*  */
-/*  */
+footer .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer .flex {
+    justify-content: center;
+    align-items: start;
+}
+
+footer .copy-right {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+footer nav {
+    text-align: start;
+    color: var(--softTextColor);
+}
+footer nav li {
+    line-height: 2;
+}
+
+footer nav li:hover {
+    color: var(--light-color);
+}
+
+.social li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
 /* KEYFRAMES */
-/*  */
-/*  */
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-400%);
@@ -773,11 +800,7 @@ footer {
     }
 }
 
-/*  */
-/*  */
 /* MEDIA QUERIES */
-/*  */
-/*  */
 
 /* Tablets and Samll */
 @media (max-width: 768px) {
