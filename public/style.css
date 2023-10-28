@@ -18,6 +18,12 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+button {
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+}
+
 /* Utilities */
 
 .demo {
@@ -406,12 +412,13 @@ article {
 /* PRODUCT CATALOGUE PAGE */
 
 .product-banner {
-    height: 40vh;
+    aspect-ratio: 21/9;
     min-height: 350px;
     width: 100%;
     background-image: url("https://picsum.photos/600/400?grayscale");
     background-position: center;
     background-size: cover;
+    margin-top: 20px;
     margin-bottom: 3rem;
 }
 
@@ -484,6 +491,31 @@ article {
     justify-content: start;
 }
 
+.pagination-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.indexes {
+    display: flex;
+}
+
+.indexes-list {
+    display: flex;
+    gap: 10px;
+}
+
+.indexes-list-items {
+    padding: 5px 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.indexes-list-items:hover {
+    background-color: lightblue;
+}
 /* Landing Page Section */
 .landing-container {
     width: 100%;
@@ -511,8 +543,6 @@ article {
 }
 .landing-image {
     width: 100%;
-    /* height: 50vh; */
-    /* min-height: 350px; */
     margin-bottom: 1rem;
     overflow: hidden;
     object-fit: cover;
@@ -523,12 +553,7 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transition: 0.5s ease-in; */
 }
-
-/* .landing-image img:hover {
-    transform: scale(1.1);
-} */
 
 .description {
     padding: 2rem;
