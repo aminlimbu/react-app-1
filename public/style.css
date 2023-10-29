@@ -277,12 +277,13 @@ a {
     width: 100%;
     overflow: hidden;
     z-index: 0;
-    transition: 5s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .featured-cards {
     min-width: 350px;
     margin: 0 12px;
+    transition: 0.3s ease-in-out;
 }
 
 .featured-lbutton,
@@ -837,6 +838,12 @@ footer nav li:hover {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1024px) {
+    .catalogue-container .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* Tablets and Samll */
 @media (max-width: 768px) {
     .hero {
@@ -850,11 +857,11 @@ footer nav li:hover {
         min-height: 300px;
     }
     .catalogue-container .grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .card {
+    /* .card {
         margin-top: 1rem;
-    }
+    } */
     .catalogue {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -976,9 +983,12 @@ footer nav li:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
     }
-
+    .catalogue-categories .grid .flex {
+        padding: 20px;
+        font-size: 14px;
+    }
     .collections .material-symbols-outlined {
-        font-size: 3rem;
+        font-size: 2rem;
         color: rgba(211, 106, 123, 0.699);
     }
     .about-title-1 {

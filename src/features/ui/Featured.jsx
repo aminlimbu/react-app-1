@@ -39,7 +39,8 @@ export const Featured = () => {
                     onClick={handleSlide}
                     name="leftButton"
                 >
-                    arrow_circle_left
+                    {/* arrow_circle_left */}
+                    navigate_before
                 </button>
                 <div key="carousel" className="featured-container">
                     {createFeaturedCards(featuredItems)}
@@ -50,7 +51,8 @@ export const Featured = () => {
                     onClick={handleSlide}
                     name="rightButton"
                 >
-                    arrow_circle_right
+                    {/* arrow_circle_right */}
+                    navigate_next
                 </button>
             </div>
         </div>
